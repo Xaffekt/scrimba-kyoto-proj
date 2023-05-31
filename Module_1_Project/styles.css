@@ -1,0 +1,102 @@
+/* Color pallete
+--dark: #150809
+--peach: #CA8D78
+--white: #ffffff
+*/
+
+
+
+body{
+    min-height: auto;
+    width: 100%;
+
+    /* Even though i set flex propeties here i still need to put it inside other id/classes. Otherwise it wont work
+       Is this because of grandchilden inheritence? Is there any way around having to use display:flex multiple times?*/
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+
+
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+    background: linear-gradient(#CA8D78, #150809 );
+}
+.outline{
+    border-left: 5px solid #CA8D78;
+    border-right: 5px solid #CA8D78;
+    background-color: #CA8D78;
+}
+a{ color:white; }
+a:hover{ color:#CA8D78; }
+
+#header-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(assets/kyoto-cover.webp);
+    background-size: cover;
+    height: 343px;
+    width: 720px;
+
+}
+.header-txt{
+    padding: 10px 5px;
+    border-radius: 10px;
+    width:fit-content;
+
+    background-color: #CA8D78;
+}
+
+/*Fix for white space between img bottom and footer*/
+#middle{ background: #CA8D78; }
+#middle img{ 
+    width: 243px;
+    height: 406px;
+    margin: 0;
+    border: none;
+
+    /*  - Breaks when the window is to small to fit all images
+        - Aspect ratio is off, images are squished as a result
+        -images have to be on the same line in html other wise there is white space between them
+    */
+}
+
+
+#footer{
+    background: linear-gradient(#CA8D78, rgba(21, 8, 9, 0.5));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 720px;
+    height: 365px;
+    color:white;
+    border-bottom: 5px solid #CA8D78
+}
+#profile-img{
+    border-radius: 50px;
+    height: 200px;
+    width: 180px;
+}
+#profile-img:hover{
+    height: 205px;
+    width: 185px;
+}
+#quote{
+    margin:10px auto 10px;
+    width: 175px;
+    height: 72px;
+    font-style: italic;
+    font-size: 16px;
+}
+#creator{ margin:0 auto; }
+#name{ margin:0px auto; }
+#footer a{ color:white; }
+#footer a:hover{ color:#150809; }
