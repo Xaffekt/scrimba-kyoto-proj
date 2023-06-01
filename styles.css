@@ -25,7 +25,7 @@ a:hover{ color:#CA8D78; }
     justify-content: center;
     align-items: center;
 
-    background-image: url(assets/kyoto-cover.webp);
+    background-image: url(kyoto-cover.webp);
     background-size: cover;
     padding: 0 50px;
     height: 30vh;
@@ -71,15 +71,15 @@ a:hover{ color:#CA8D78; }
 }
 
 .card-1{
-    background-image: url("assets/Kiyomizu-dera.webp");
+    background-image: url("Kiyomizu-dera.webp");
 }
 
 .card-2{
-    background-image: url("assets/Arashiyama-bamboo-grove.webp");
+    background-image: url("Arashiyama-bamboo-grove.webp");
 }
 
 .card-3{
-    background-image: url("assets/ramen.webp");
+    background-image: url("ramen.webp");
 }
 
 .card:hover{
