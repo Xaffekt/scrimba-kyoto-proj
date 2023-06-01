@@ -1,0 +1,119 @@
+
+/* Color pallete
+--dark: #150809
+--peach: #CA8D78
+--peach/white: #E4D4D3
+*/
+
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#E4D4D3, #150809 );
+    color:white;
+}
+
+a{ color:white; }
+a:hover{ color:#CA8D78; }
+
+#header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(assets/kyoto-cover.webp);
+    background-size: cover;
+    padding: 0 50px;
+    height: 30vh;
+    object-fit: cover;
+
+}
+
+.header-txt{
+    padding: 10px 5px;
+    border-radius: 10px;
+    width:fit-content;
+
+    background-color: #CA8D78;
+}
+
+/*Image cards*/
+
+.container-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 100px;
+}
+
+.card{
+    background: white;
+    color:#150809;
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-1{
+    background-image: url("assets/Kiyomizu-dera.webp");
+}
+
+.card-2{
+    background-image: url("assets/Arashiyama-bamboo-grove.webp");
+}
+
+.card-3{
+    background-image: url("assets/ramen.webp");
+}
+
+.card:hover{
+    background-color: rgb(70, 68, 68);
+    color:white;
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+/*About me footer*/
+
+.guide{
+    display: flex;
+    justify-content: center;
+    color:white;
+    margin:100px auto;
+}
+.guide-text{
+    margin: 30px 0 0 50px;
+}
+.profile-img{
+    border-radius: 50px;
+    height: 200px;
+    width: 180px;
+}
+
+.profile-img:hover{
+    transform: scale(1.03);
+}
+
+.guide-text-aboutMe{
+    width: 175px;
+    height: 72px;
+    font-style: italic;
+    font-size: 16px;
+}
